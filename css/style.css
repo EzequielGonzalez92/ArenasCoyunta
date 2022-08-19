@@ -1,0 +1,178 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+
+/************ Tipos de fuentes ***************/
+@font-face {
+    font-family: "octin";
+    src: url(../font/Octin\ College\ Bold.ttf);
+}
+
+@font-face {
+    font-family: "rg";
+    src: url(../font/octin\ college\ rg.otf);
+}
+
+@font-face {
+    font-family: "sans";
+    src: url(../font/OpenSans-Medium.ttf);
+}
+
+/************ Titulo ***************/
+h1 {
+    color: azure;
+    font-family: "octin";
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/Fondo.png);
+    background-size: cover;
+    padding: 100px 200px 200px 200px;
+    margin-top: 0;
+    border: solid 7px black;
+    
+}
+
+/*********** Subtitulo *************/
+h2 {
+    font-family: "rg";
+    color: rgb(9, 53, 9);
+    font-size: 35px;
+    text-align: center;
+}
+
+/******* Cambio de font *************/
+body {
+    background-color: beige;
+    font-family: "sans";
+}
+
+/******* Parrafos **********/
+p {
+    font-size: 25px;
+    background-color: chocolate;
+}
+
+/* ******** Overflow ***********
+.overflow {
+    height: 300px;
+    width: 1890px;
+    overflow: scroll;
+    background-color: chocolate;
+} */
+
+/******** Position Absolute Logo *********/
+.logo {
+    height: 180px;
+    width: 150px;
+    position: absolute;
+    top: 100px;
+    bottom: 30px;
+    right: 200px;
+    left: 400px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 150px;
+    background-color: green;
+}
+
+.navegador {
+    display: flex;
+}
+
+.menu__item {
+    font-family: "rg";
+    font-size: 25px;
+    display: flex;
+
+}
+
+.divMenu {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/*********** Position Fixed Facebook **************/
+.facebook {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    height: 70px;
+    width: 70px;
+}
+
+/********* Grid Galería *******/
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+/************* Contenedor de la grid *********/
+.grid_gallery {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 2fr);
+    gap: 20px;
+    padding-top: 120px;
+}
+
+.grid_gallery .img-box img {
+    border-radius: 10px;
+}
+
+
+/****** Mapa ******/
+.iframe{
+    display: flex;
+}
+
+/********** Aplicando Tablet Media Queris *****************/
+
+@media screen and (max-width:768px) {
+    .grid_gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu {
+        flex-direction: column;
+        background-color: transparent;
+        gap: 80px;
+    }
+    .logo{
+        display: none;
+}
+
+}
+
+
+
+/************** Aplicando Media Queris en Mobile *****************/
+
+@media screen and (max-width:480px) {
+    .grid_gallery {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    h1{
+        font-size: 80px;
+    }
+.menu{
+    background-color:transparent;
+    gap: 70px;
+}
+
+}

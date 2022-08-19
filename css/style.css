@@ -22,7 +22,7 @@
 }
 
 /************ Titulo ***************/
-h1 {
+span {
     color: azure;
     font-family: "octin";
     font-size: 100px;
@@ -32,8 +32,9 @@ h1 {
     background-size: cover;
     padding: 100px 200px 200px 200px;
     margin-top: 0;
+    margin-bottom: 80px;
     border: solid 7px black;
-    
+
 }
 
 /*********** Subtitulo *************/
@@ -64,41 +65,48 @@ p {
     background-color: chocolate;
 } */
 
-/******** Position Absolute Logo *********/
-.logo {
-    height: 180px;
-    width: 150px;
-    position: absolute;
-    top: 100px;
-    bottom: 30px;
-    right: 200px;
-    left: 400px;
-}
-
-.menu {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    gap: 150px;
-    background-color: green;
-}
+/* ****************Menu******************* */
 
 .navegador {
     display: flex;
+    width: 100%;
+    height: 80px;
+    border: solid 1px black;
+    align-items: center;
+    justify-content: space-around;
+    background-color: green;
 }
 
-.menu__item {
-    font-family: "rg";
-    font-size: 25px;
+.navegador ul {
+
     display: flex;
+    gap: 40px;
 
 }
 
-.divMenu {
+li {
+
+    list-style: none;
+    font-family: "octin";
+    font-size: 20px;
+
+
+}
+
+ul {
     text-decoration: none;
-    display: flex;
-    justify-content: space-evenly;
+}
+
+.menu__item a {
+    text-decoration: none;
+    color: rgb(3, 33, 4);
+}
+
+/* **************Tabla**************** */
+.tabla {
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -135,31 +143,59 @@ p {
     border-radius: 10px;
 }
 
+.imagen{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 /****** Mapa ******/
-.iframe{
+.iframe {
     display: flex;
+    justify-content: center;
 }
 
 /********** Aplicando Tablet Media Queris *****************/
 
+
 @media screen and (max-width:768px) {
     .grid_gallery {
         grid-template-columns: repeat(2, 1fr);
+        
     }
 
+
     .menu {
+        display: flex;
         flex-direction: column;
         background-color: transparent;
         gap: 80px;
     }
-    .logo{
+
+    .navegador {
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+        height: auto;
+    }
+
+    h1 {
         display: none;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+    .imagen{
+        width: 95%;
+        height: 95%;
+    }
 }
-
-}
-
-
 
 /************** Aplicando Media Queris en Mobile *****************/
 
@@ -167,12 +203,19 @@ p {
     .grid_gallery {
         grid-template-columns: repeat(1, 1fr);
     }
-    h1{
-        font-size: 80px;
+
+    span {
+        font-size: 70px;
     }
-.menu{
-    background-color:transparent;
-    gap: 70px;
-}
+
+    .menu {
+        background-color: transparent;
+        gap: 70px;
+    }
+
+    .imagen{
+        width: 90%;
+        height: 90%;
+    }
 
 }

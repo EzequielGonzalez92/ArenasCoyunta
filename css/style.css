@@ -5,7 +5,7 @@
 }
 
 
-/************ Tipos de fuentes ***************/
+/************* Tipos de fuentes ***************/
 @font-face {
     font-family: "octin";
     src: url(../font/Octin\ College\ Bold.ttf);
@@ -21,22 +21,68 @@
     src: url(../font/OpenSans-Medium.ttf);
 }
 
-/************ Titulo ***************/
-span {
-    color: azure;
-    font-family: "octin";
-    font-size: 100px;
-    display: flex;
-    justify-content: center;
-    background-image: url(../img/Fondo.png);
-    background-size: cover;
-    padding: 100px 200px 200px 200px;
-    margin-top: 0;
-    margin-bottom: 80px;
-    border: solid 7px black;
+/*****************Menu********************/
+.navbar-nav {
+    gap: 10px;
+    padding-right: 50px;
+    padding-top: 50px;
+    }
 
+
+.nav-link {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px rgb(1, 1, 2);
+} 
+
+
+.navbar {
+    font-size: 35px;
+    font-family: "octin";
+    }
+
+.nav-link:hover {
+    color: green;
+    transition: all 1s ease 0s;
 }
 
+.header{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+} 
+
+/**************** Footer ***************/
+.footerbs{
+    background-color: rgb(20, 20, 82);
+}
+
+
+/**************Media Queris *********************/
+@media only screen and (max-width: 1200px) {
+    .navbar{
+        font-size: 25px;
+    }
+}
+/********************* Fondo ***********************/
+
+.main {
+    position: relative;
+    background: url(../img/Fondo.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+    margin-bottom: 100px;
+    border-radius: 30px;
+    }
+/***************** Título *******************/
+    h1{
+        font-size: 50px;
+        text-align: center;
+        font-family: "octin";
+        color: white;
+        text-shadow: 2px 2px rgb(1, 1, 2);
+        padding-bottom: 50px;
+    }
 /*********** Subtitulo *************/
 h2 {
     font-family: "rg";
@@ -45,72 +91,28 @@ h2 {
     text-align: center;
 }
 
-/******* Cambio de font *************/
+/*********** Cambio de font *************/
 body {
+
     background-color: beige;
     font-family: "sans";
 }
-
-/******* Parrafos **********/
-p {
-    font-size: 25px;
-    background-color: chocolate;
+.acordeon{
+    font-family: "rg";
 }
 
-/* ******** Overflow ***********
-.overflow {
-    height: 300px;
-    width: 1890px;
-    overflow: scroll;
-    background-color: chocolate;
-} */
-
-/* ****************Menu******************* */
-
-.navegador {
-    display: flex;
-    width: 100%;
-    height: 80px;
-    border: solid 1px black;
-    align-items: center;
-    justify-content: space-around;
-    background-color: green;
-}
-
-.navegador ul {
-
-    display: flex;
-    gap: 40px;
-
-}
-
-li {
-
-    list-style: none;
+/************** Párrafos ***************/
+.titulofooter {
     font-family: "octin";
-    font-size: 20px;
-
-
+    color: rgb(75, 185, 24);
 }
 
-ul {
-    text-decoration: none;
+.h9{
+    font-size: small;
 }
 
-.menu__item a {
-    text-decoration: none;
-    color: rgb(3, 33, 4);
-}
-
-li:hover {
-    background-color: rgb(247, 166, 14);
-}
-
-/* **************Tabla**************** */
-.tabla {
-    width: 100px;
-    margin-left: auto;
-    margin-right: auto;
+.titulo2footer{
+    font-weight: bold;
 }
 
 
@@ -123,111 +125,24 @@ li:hover {
     width: 70px;
 }
 
-/********* Grid Galería *******/
-.container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 30px;
-}
-
-/************* Contenedor de la grid *********/
-.grid_gallery {
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 2fr);
-    gap: 20px;
-    padding-top: 120px;
-}
-
-.grid_gallery .img-box img {
-    border-radius: 10px;
+/****************** Grid Galería ***************/
+.grida{
+    border-radius: 20px;
     opacity: 0.7;
 }
-
-/* *************Animaciones***************** */
-.grid_gallery .img-box img:hover {
+.grida:hover{
     transform: scale(1.1);
     opacity: 1;
 }
 
-.imagen {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.gridimg{
+    border-radius: 10px;
 }
+/***************** Animaciones *****************/
 
 
-/****** Mapa ******/
+/************** Mapa ******************/
 .iframe {
     display: flex;
     justify-content: center;
-}
-
-/********** Aplicando Tablet Media Queris *****************/
-
-
-@media screen and (max-width:768px) {
-    .grid_gallery {
-        grid-template-columns: repeat(2, 1fr);
-
-    }
-
-
-    .menu {
-        display: flex;
-        flex-direction: column;
-        background-color: transparent;
-        gap: 80px;
-    }
-
-    .navegador {
-        display: flex;
-        flex-direction: column;
-        background-color: transparent;
-        height: auto;
-    }
-
-    h1 {
-        display: none;
-    }
-
-    h2 {
-        font-size: 35px;
-    }
-
-    p {
-        font-size: 20px;
-    }
-
-    .imagen {
-        width: 95%;
-        height: 95%;
-    }
-}
-
-/************** Aplicando Media Queris en Mobile *****************/
-
-@media screen and (max-width:480px) {
-    .grid_gallery {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    span {
-        font-size: 70px;
-    }
-
-    .menu {
-        background-color: transparent;
-        gap: 70px;
-    }
-
-    .imagen {
-        width: 90%;
-        height: 90%;
-    }
-
 }

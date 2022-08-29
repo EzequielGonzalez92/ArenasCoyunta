@@ -1,0 +1,13 @@
+body {
+  background-color: #f55; }
+
+h1 {
+  font-family: "georgia"; }
+
+ul {
+  list-style: none; }
+  ul li {
+    background-color: cyan; }
+    ul li a {
+      text-decoration: none;
+      color: #00fa5c; }

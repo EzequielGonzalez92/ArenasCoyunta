@@ -1,30 +1,65 @@
 //variables en sass
-$bg-contenedor: #f55;
-$font-family:"georgia";
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    
+}
+
 
 body{
-    background-color: $bg-contenedor;
+    background-color: beige;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.navbar{
+    font-size: 35px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    
+.navbar-nav {
+        gap: 10px;
+        padding-right: 50px;
+        padding-top: 50px;
 
-h1{
-    font-family: $font-family;
-}
-
-ul{
-
-    list-style: none;
-
-
-    li{
-        background-color: cyan;
-        
-        a {
-        text-decoration: none;
-        color: rgb(0, 250, 92);
+        .nav-link {
+            color: rgb(255, 255, 255);
+            text-shadow: 2px 2px rgb(1, 1, 2);
+        } 
+        .nav-link:hover {
+            color: green;
+            transition: all 1s ease 0s;
+        }
         }
     }
-}
 
+
+.footerbs{
+        background-color: rgb(20, 20, 82);
+    }
+
+
+
+
+/********************* Fondo ***********************/
+
+.main {
+    position: relative;
+    background: url(../img/Fondo.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+    margin-bottom: 100px;
+    border-radius: 30px;
+    }
+
+/**************Media Queris *********************/
+@media only screen and (max-width: 1200px) {
+    .navbar{
+        font-size: 25px;
+    }
+}
 
 

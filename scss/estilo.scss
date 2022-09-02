@@ -1,20 +1,32 @@
-//variables en sass
 * {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-    
 }
 
+@import "fonts";
 
 body{
     background-color: beige;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: $fonth4;
+    
 }
 
+h1{
+    font-family: $fonth1;
+    color: rgb(5, 76, 5);
+}
+
+h2{
+    font-family: $fonth2;
+}
+
+h4{
+    font-family: $fonth4;
+}
 .navbar{
     font-size: 35px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: $fonth1;
     position: absolute;
     z-index: 10;
     width: 100%;
@@ -34,7 +46,11 @@ body{
         }
         }
     }
-
+.header{
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+    } 
 
 .footerbs{
         background-color: rgb(20, 20, 82);
@@ -61,5 +77,3 @@ body{
         font-size: 25px;
     }
 }
-
-

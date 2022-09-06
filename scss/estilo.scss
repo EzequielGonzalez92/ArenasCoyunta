@@ -39,11 +39,12 @@ h4{
         .nav-link {
             color: rgb(255, 255, 255);
             text-shadow: 2px 2px rgb(1, 1, 2);
+            &:hover {
+                color: green;
+                transition: all 1s ease 0s;
+            }
         } 
-        .nav-link:hover {
-            color: green;
-            transition: all 1s ease 0s;
-        }
+    
         }
     }
 .header{

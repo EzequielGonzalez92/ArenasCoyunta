@@ -1,10 +1,13 @@
+@import 'footer';
+@import "fonts";
+@import 'navbar';
+
 * {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
 }
 
-@import "fonts";
 
 body{
     background-color: beige;
@@ -24,29 +27,14 @@ h2{
 h4{
     font-family: $fonth4;
 }
-.navbar{
-    font-size: 35px;
-    font-family: $fonth1;
-    position: absolute;
-    z-index: 10;
-    width: 100%;
-    
-.navbar-nav {
-        gap: 10px;
-        padding-right: 50px;
-        padding-top: 50px;
-        // **************************AGREGANDO SELECTOR &**********************************
-        .nav-link {
-            color: rgb(255, 255, 255);
-            text-shadow: 2px 2px rgb(1, 1, 2);
-            &:hover {
-                color: green;
-                transition: all 1s ease 0s;
-            }
-        } 
-    
-        }
+
+// Aplicando mixin
+
+    @mixin tamanios($ancho,$alto) {
+        width: $ancho;
+        height: $alto;
     }
+
 .header{
         position: absolute;
         z-index: 10;
@@ -57,7 +45,12 @@ h4{
         background-color: rgb(20, 20, 82);
     }
 
-
+.iconos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
 
 
 /********************* Fondo ***********************/

@@ -1,7 +1,21 @@
-* {
-  padding: 0%;
-  margin: 0%;
-  box-sizing: border-box;
+.fa-facebook, .fa-instagram, .fa-whatsapp {
+  color: blue;
+}
+
+.fa-instagram {
+  color: rgb(154, 33, 53);
+}
+
+.fa-whatsapp {
+  color: green;
+}
+
+.h3 {
+  color: green;
+}
+
+.fa-facebook, .fa-instagram, .fa-whatsapp {
+  font-size: 50px;
 }
 
 @font-face {
@@ -16,6 +30,34 @@
   font-family: "sans";
   src: url("../font/OpenSans-Medium.ttf");
 }
+.navbar {
+  font-size: 35px;
+  font-family: "octin", sans-serif;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+}
+
+.navbar-nav {
+  gap: 10px;
+  padding-right: 50px;
+  padding-top: 50px;
+}
+.navbar-nav .nav-link {
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px rgb(1, 1, 2);
+}
+.navbar-nav .nav-link:hover {
+  color: green;
+  transition: all 1s ease 0s;
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
 body {
   background-color: beige;
   font-family: "sans", sans-serif;
@@ -34,27 +76,6 @@ h4 {
   font-family: "sans", sans-serif;
 }
 
-.navbar {
-  font-size: 35px;
-  font-family: "octin", sans-serif;
-  position: absolute;
-  z-index: 10;
-  width: 100%;
-}
-.navbar .navbar-nav {
-  gap: 10px;
-  padding-right: 50px;
-  padding-top: 50px;
-}
-.navbar .navbar-nav .nav-link {
-  color: rgb(255, 255, 255);
-  text-shadow: 2px 2px rgb(1, 1, 2);
-}
-.navbar .navbar-nav .nav-link:hover {
-  color: green;
-  transition: all 1s ease 0s;
-}
-
 .header {
   position: absolute;
   z-index: 10;
@@ -63,6 +84,13 @@ h4 {
 
 .footerbs {
   background-color: rgb(20, 20, 82);
+}
+
+.iconos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
 /********************* Fondo ***********************/

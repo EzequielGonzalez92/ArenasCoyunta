@@ -1,0 +1,34 @@
+// Aplicando MAPA
+
+$redes:(
+    facebook:blue,
+    instagram: rgb(154, 33, 53),
+    whatsapp: green
+);
+
+@each $redsocial, $color in $redes{
+    .fa-#{$redsocial}{
+        color:$color;
+    }
+}
+
+// Aplicando Map-get
+
+.h3{
+    color: map-get($redes, whatsapp);
+}
+
+
+// Aplicando Extend
+
+.fa-facebook{
+    font-size: 50px;
+}
+
+.fa-whatsapp{
+    @extend .fa-facebook;
+}
+.fa-instagram{
+    @extend .fa-facebook;
+}
+

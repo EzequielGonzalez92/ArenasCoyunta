@@ -16,12 +16,19 @@ body{
 }
 
 h1{
-    font-family: $fonth1;
-    color: rgb(5, 76, 5);
+        font-family: $fonth1;
+        font-size: 50px;
+    text-align: center;
+    color: white;
+        text-shadow: 2px 2px rgb(1, 1, 2);
+        padding-bottom: 50px;
 }
 
 h2{
     font-family: $fonth2;
+    color: rgb(9, 53, 9);
+    font-size: 35px;
+    text-align: center;
 }
 
 h4{
@@ -64,6 +71,27 @@ h4{
     margin-bottom: 100px;
     border-radius: 30px;
     }
+
+    // Grid
+
+    .grida{
+        border-radius: 20px;
+        opacity: 0.7;
+    }
+    .grida:hover{
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    
+    .gridimg{
+        border-radius: 10px;
+    }
+
+/************** Mapa ******************/
+.iframe {
+    display: flex;
+    justify-content: center;
+}
 
 /**************Media Queris *********************/
 @media only screen and (max-width: 1200px) {

@@ -178,4 +178,26 @@ h5 {
 /**************Media Queris *********************/
 @media only screen and (max-width: 1200px) {
   .navbar {
-    font-size: 25px; } }
+    font-size: 25px; }
+  .h9 {
+    font-size: x-small; }
+  .text {
+    font-size: small; }
+  .iframe {
+    display: flex;
+    flex-direction: column; } }
+
+@media only screen and (max-width: 1024px) {
+  .containernos {
+    display: flex;
+    flex-direction: column; } }
+
+@media only screen and (max-width: 768px) {
+  .navbar-brand {
+    width: 200px; }
+  .navbar-nav {
+    font-size: small; } }
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: xx-large; } }

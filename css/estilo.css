@@ -1,0 +1,181 @@
+.fa-facebook, .fa-whatsapp, .fa-instagram {
+  color: white; }
+
+.fa-instagram {
+  color: white(154, 33, 53); }
+
+.fa-whatsapp {
+  color: white; }
+
+.h3 {
+  color: white;
+  font-family: 'octin';
+  text-shadow: 2px 2px #010102; }
+
+.fa-facebook, .fa-whatsapp, .fa-instagram {
+  font-size: 30px;
+  text-shadow: 2px 2px #010102; }
+  .fa-facebook:hover, .fa-whatsapp:hover, .fa-instagram:hover {
+    color: green;
+    transition: all 1s ease 0s; }
+
+.h9 {
+  font-size: small; }
+
+.h6 {
+  font-weight: bolder;
+  text-shadow: 2px 2px #010102; }
+
+.iconos {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  padding-bottom: 30px; }
+
+.logofoot {
+  padding-bottom: 40px; }
+
+.footerbs {
+  background-color: #141452; }
+
+@font-face {
+  font-family: "octin";
+  src: url("../font/Octin College Bold.ttf"); }
+
+@font-face {
+  font-family: "rg";
+  src: url("../font/octin college rg.otf"); }
+
+@font-face {
+  font-family: "sans";
+  src: url("../font/OpenSans-Medium.ttf"); }
+
+.navbar {
+  font-size: 30px;
+  font-family: "octin", sans-serif;
+  position: absolute;
+  z-index: 10;
+  width: 100%; }
+
+.navbar-nav {
+  gap: 10px;
+  padding-right: 50px;
+  padding-top: 50px; }
+  .navbar-nav .nav-link {
+    color: white;
+    text-shadow: 2px 2px #010102; }
+    .navbar-nav .nav-link:hover {
+      color: green;
+      transition: all 1s ease 0s; }
+
+.header {
+  position: absolute;
+  z-index: 10;
+  width: 100%; }
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box; }
+
+body {
+  background-color: beige;
+  font-family: "sans", sans-serif; }
+
+h1 {
+  font-family: "octin", sans-serif;
+  font-size: 50px;
+  text-align: center;
+  color: #06801e;
+  text-shadow: 2px 2px #010102;
+  padding-bottom: 50px; }
+
+h2 {
+  font-family: "rg", sans-serif;
+  color: #093509;
+  font-size: 35px;
+  text-align: center; }
+
+h4 {
+  font-family: "sans", sans-serif; }
+
+h5 {
+  font-family: "rg", sans-serif;
+  text-align: center; }
+
+.cardtext {
+  font-size: small;
+  text-align: center; }
+
+.text {
+  color: white;
+  text-shadow: 2px 2px #010102;
+  font-size: 20px;
+  padding-left: 20px; }
+
+.containernos {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.nosimg {
+  border-radius: 10px; }
+
+/********************* Fondo ***********************/
+.main {
+  position: relative;
+  background: url(../img/Fondo.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 50vh;
+  margin-bottom: 100px; }
+
+.custom-shape-divider-bottom-1663027264 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg); }
+
+.custom-shape-divider-bottom-1663027264 svg {
+  position: relative;
+  display: block;
+  width: calc(114% + 1.3px);
+  height: 61px; }
+
+.custom-shape-divider-bottom-1663027264 .shape-fill {
+  fill: beige; }
+
+.carousel-inner {
+  border-radius: 20px; }
+
+.grida {
+  border-radius: 20px;
+  opacity: 0.7; }
+
+.grida:hover {
+  transform: scale(1.1);
+  opacity: 1;
+  transition: all 1.5s ease 0s; }
+
+.gridimg {
+  border-radius: 10px; }
+
+/************** Mapa ******************/
+.iframe {
+  display: flex;
+  justify-content: center; }
+
+.mapa {
+  margin-top: 100px;
+  padding: 10px; }
+
+.localizacionimg {
+  border-radius: 10px; }
+
+/**************Media Queris *********************/
+@media only screen and (max-width: 1200px) {
+  .navbar {
+    font-size: 25px; } }

@@ -8,6 +8,7 @@
     box-sizing: border-box;
 }
 
+// Estilo General
 
 body{
     background-color: beige;
@@ -15,11 +16,13 @@ body{
     
 }
 
+// Estilo de texto
+
 h1{
         font-family: $fonth1;
         font-size: 50px;
     text-align: center;
-    color: white;
+    color: rgb(6, 128, 30);
         text-shadow: 2px 2px rgb(1, 1, 2);
         padding-bottom: 50px;
 }
@@ -35,30 +38,34 @@ h4{
     font-family: $fonth4;
 }
 
-// Aplicando mixin
+h5{
+    font-family: $fonth2;
+    text-align: center;
+}
 
-    @mixin tamanios($ancho,$alto) {
-        width: $ancho;
-        height: $alto;
+.cardtext{
+    font-size: small;
+    text-align: center;
+}
+
+.text{
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px rgb(1, 1, 2);
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+// Seccion Nosotros
+
+.containernos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     }
 
-.header{
-        position: absolute;
-        z-index: 10;
-        width: 100%;
-    } 
-
-.footerbs{
-        background-color: rgb(20, 20, 82);
-    }
-
-.iconos {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
-    }
-
+.nosimg{
+    border-radius: 10px;
+}
 
 /********************* Fondo ***********************/
 
@@ -69,7 +76,36 @@ h4{
     background-position: center;
     min-height: 50vh;
     margin-bottom: 100px;
-    border-radius: 30px;
+    }
+
+
+// Banner Separador
+
+    .custom-shape-divider-bottom-1663027264 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+    
+    .custom-shape-divider-bottom-1663027264 svg {
+        position: relative;
+        display: block;
+        width: calc(114% + 1.3px);
+        height: 61px;
+    }
+    
+    .custom-shape-divider-bottom-1663027264 .shape-fill {
+        fill: beige;
+    }
+
+// Carrusel
+
+    .carousel-inner{
+        border-radius: 20px;
     }
 
     // Grid
@@ -81,6 +117,7 @@ h4{
     .grida:hover{
         transform: scale(1.1);
         opacity: 1;
+        transition: all 1.5s ease 0s;
     }
     
     .gridimg{
@@ -92,6 +129,17 @@ h4{
     display: flex;
     justify-content: center;
 }
+
+.mapa{
+    margin-top: 100px;
+    padding: 10px;
+}
+
+.localizacionimg{
+    border-radius: 10px;
+}
+
+
 
 /**************Media Queris *********************/
 @media only screen and (max-width: 1200px) {
